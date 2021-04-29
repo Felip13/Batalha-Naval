@@ -1,0 +1,53 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://WaterAnimations/ocean05.png" type="Texture" id=4]
+[ext_resource path="res://WaterAnimations/ocean17.png" type="Texture" id=5]
+[ext_resource path="res://WaterAnimations/ocean01.png" type="Texture" id=7]
+[ext_resource path="res://WaterAnimations/ocean12.png" type="Texture" id=8]
+[ext_resource path="res://WaterAnimations/ocean20.png" type="Texture" id=9]
+[ext_resource path="res://WaterAnimations/ocean18.png" type="Texture" id=11]
+[ext_resource path="res://WaterAnimations/ocean06.png" type="Texture" id=12]
+[ext_resource path="res://WaterAnimations/ocean15.png" type="Texture" id=13]
+[ext_resource path="res://WaterAnimations/ocean08.png" type="Texture" id=14]
+[ext_resource path="res://WaterAnimations/ocean14.png" type="Texture" id=15]
+[ext_resource path="res://WaterAnimations/ocean19.png" type="Texture" id=16]
+[ext_resource path="res://WaterAnimations/ocean09.png" type="Texture" id=18]
+[ext_resource path="res://WaterAnimations/ocean13.png" type="Texture" id=19]
+[ext_resource path="res://WaterAnimations/ocean21.png" type="Texture" id=20]
+[ext_resource path="res://WaterAnimations/ocean16.png" type="Texture" id=21]
+[ext_resource path="res://WaterAnimations/ocean10.png" type="Texture" id=23]
+[ext_resource path="res://WaterAnimations/ocean02.png" type="Texture" id=24]
+[ext_resource path="res://WaterAnimations/ocean03.png" type="Texture" id=25]
+[ext_resource path="res://WaterAnimations/ocean07.png" type="Texture" id=26]
+[ext_resource path="res://WaterAnimations/ocean04.png" type="Texture" id=28]
+[ext_resource path="res://WaterAnimations/ocean11.png" type="Texture" id=29]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends ItemList
+
+"
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 20 ), ExtResource( 7 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 28 ), ExtResource( 4 ), ExtResource( 12 ), ExtResource( 26 ), ExtResource( 14 ), ExtResource( 18 ), ExtResource( 23 ), ExtResource( 29 ), ExtResource( 8 ), ExtResource( 19 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 21 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 16 ), ExtResource( 9 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "default",
+"speed": 20.0
+} ]
+
+[node name="Node2D" type="Node2D"]
+script = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 522.83, 302.04 )
+scale = Vector2( 3.00121, 3.34259 )
+frames = SubResource( 2 )
+frame = 6
+playing = true
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
